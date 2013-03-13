@@ -40,6 +40,10 @@ You can send logs to logstash by pushing them over tcp port 5001. For example:
 
     echo "Hello world!" | telnet localhost 5001
 
+You can also send logs from any service which support syslog.  This is a host only adapter, so the service must be on your local machine
+
+Just set your host to 39.39.39.22:5514
+
 If you want to play with the logstash configuration, you can do the following:
 
 * run: `vagrant ssh` to ssh in
